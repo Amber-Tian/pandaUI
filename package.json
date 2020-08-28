@@ -1,0 +1,9 @@
+{
+  "name": "pandaUI",
+  "version": "1.0.0",
+  "description": "一个简易的Vue UI组件库",
+  "main": "index.js",
+  "repository": "git@github.com:Amber-Tian/pandaUI.git",
+  "author": "Amber <649458276@qq.com>",
+  "license": "MIT"
+}
