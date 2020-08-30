@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>panda UI</title>
+</head>
+<body>
+<div id="app">
+  <p-button icon="setting" :loading="loading1" @click="loading1=!loading1">按钮</p-button>
+  <p-button icon="setting" class="icon-right" :loading="loading2" @click="loading2=!loading2">按钮</p-button>
+  <p-button :loading="loading3" @click="loading3=!loading3">按钮</p-button>
+  <p-button-group>
+    <p-button icon="left">上一页</p-button>
+    <p-button>更多</p-button>
+    <p-button icon="right" class="icon-right">下一页</p-button>
+  </p-button-group>
+</div>
+<script src="./src/app.js"></script>
+</body>
+</html>
