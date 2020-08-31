@@ -4,6 +4,7 @@
   "description": "一个简易的Vue UI组件库",
   "main": "index.js",
   "scripts": {
+    "strat": "parcel index.html --no-cache",
     "dev-test": "parcel watch tests/* --no-cache & karma start",
     "test": "parcel build tests/* --no-minify && karma start --single-run"
   },

@@ -9,7 +9,7 @@ Vue.config.devtools = false
 
 describe('Button', () => {
   it('存在.', () => {
-    return expect(Button).to.exist
+    expect(Button).to.exist
   })
   it('可以设置icon.', () => {
     const Constructor = Vue.extend(Button)
@@ -75,6 +75,6 @@ describe('Button', () => {
     const callback = sinon.fake()
     vm.$on('click', callback)
     vm.$el.click()
-    return expect(callback).to.have.been.called
+    expect(callback).to.have.been.called
   })
 })
