@@ -40,6 +40,18 @@ describe('Input', () => {
       expect(inputElement.disabled).to.equal(true)
     })
 
+    it('接收 success', () => {
+      vm = new Constructor({
+        propsData: {
+          success: true
+        }
+      }).$mount()
+      const inputElement = vm.$el.querySelector('input')
+      expect(inputElement.getAttribute('success')).to.equal('true')
+      const useElement = vm.$el.querySelector('use')
+      expect(useElement.getAttribute('xlink:href')).to.equal('#success')
+    })
+
     it('接收 error', () => {
       vm = new Constructor({
         propsData: {
