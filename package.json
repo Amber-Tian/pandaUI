@@ -4,8 +4,7 @@
   "description": "一个简易的Vue UI组件库",
   "main": "index.js",
   "scripts": {
-    "strat": "parcel index.html --no-cache",
-    "dev-test": "parcel watch tests/* --no-cache & karma start",
+    "start": "parcel index.html --no-cache",
     "test": "parcel build tests/* --no-minify && karma start --single-run"
   },
   "repository": "git@github.com:Amber-Tian/pandaUI.git",
@@ -30,6 +29,7 @@
     "sass": "^1.26.10",
     "sinon": "^9.0.3",
     "sinon-chai": "^3.5.0",
+    "typescript": "^4.0.2",
     "vue-template-compiler": "^2.6.12"
   },
   "alias": {

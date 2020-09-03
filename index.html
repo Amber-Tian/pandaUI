@@ -5,12 +5,59 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <title>panda UI</title>
   <style>.demo{margin: 20px 0}</style>
+  <style>
+    *{box-sizing: border-box;}
+  </style>
 </head>
 <body>
 <div id="app">
+  <div class="demo" style="overflow: hidden;">
+    <p-row gutter="20">
+      <p-col class="col"
+             span="24"
+             pad="8"
+             small-pc="4"
+             pc="2"
+             big-pc="1"
+      >hi</p-col>
+      <p-col class="col"
+             span="24"
+             pad="16"
+             small-pc="20"
+             pc="22"
+             big-pc="23"
+      >hello</p-col>
+    </p-row>
+    <p-row>
+      <p-col class="col" span="10">hi</p-col>
+      <p-col class="col" span="14">hello</p-col>
+    </p-row>
+    <p-row gutter="100">
+      <p-col class="col" span="6">hi</p-col>
+      <p-col class="col" span="4">hello</p-col>
+      <p-col class="col" span="6">hello</p-col>
+      <p-col class="col" span="4">hello</p-col>
+    </p-row>
+  </div>
+  <div class="demo">
+    <p-layout>
+      <p-header>header</p-header>
+      <p-content>content</p-content>
+      <p-footer>footer</p-footer>
+    </p-layout>
+    <p-layout>
+      <p-header>header</p-header>
+      <p-layout>
+        <p-sider>sider</p-sider>
+        <p-content>content</p-content>
+      </p-layout>
+      <p-footer>footer</p-footer>
+    </p-layout>
+  </div>
   <div class="demo">
     <p-input disabled value="张三"></p-input>
     <p-input value="李四"></p-input>
+    <p-input success value="王五"></p-input>
     <p-input error="用户名不能为空"></p-input>
   </div>
   <div class="demo">
