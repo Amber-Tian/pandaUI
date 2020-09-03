@@ -1,6 +1,8 @@
 <template>
   <div class="col" :class="colClass" :style="colStyle">
-    <slot></slot>
+    <div style="border: 1px solid red">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -32,8 +34,8 @@
       },
       colStyle() {
         return {
-          marginLeft: this.gutter / 2 + 'px',
-          marginRight: this.gutter / 2 + 'px'
+          paddingLeft: this.gutter / 2 + 'px',
+          paddingRight: this.gutter / 2 + 'px'
         }
       }
     }
