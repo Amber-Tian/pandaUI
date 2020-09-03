@@ -12,6 +12,11 @@ import Col from './grid/col'
 import Row from './grid/row'
 import Toast from './toast'
 import plugin from './plugin'
+import Tabs from './tabs/tabs'
+import TabsHead from './tabs/tabs-head'
+import TabsBody from './tabs/tabs-body'
+import TabsItem from './tabs/tabs-item'
+import TabsPane from './tabs/tabs-pane'
 
 Vue.component('p-button', Button)
 Vue.component('p-icon', Icon)
@@ -26,6 +31,11 @@ Vue.component('p-row', Row)
 Vue.component('p-col', Col)
 Vue.component('p-toast', Toast)
 Vue.use(plugin)
+Vue.component('p-tabs', Tabs)
+Vue.component('p-tabs-head', TabsHead)
+Vue.component('p-tabs-body', TabsBody)
+Vue.component('p-tabs-item', TabsItem)
+Vue.component('p-tabs-pane', TabsPane)
 
 new Vue({
   el: '#app',
