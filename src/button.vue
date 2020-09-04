@@ -36,7 +36,7 @@
 
 <style lang="scss" scoped>
   @import "var";
-  .p-button { font-size: $font-size; height: $button-height;
+  .p-button { font-size: $font-size; height: $button-height; cursor: pointer;
     padding: 0 1em; border-radius: $border-radius; background-color: $button-bg;
     border: 1px solid $border-color; display: inline-flex;
     vertical-align: middle; justify-content: center; align-items: center;
