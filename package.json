@@ -1,6 +1,6 @@
 {
-  "name": "pandaUI",
-  "version": "0.0.1",
+  "name": "panda-ui-amber",
+  "version": "0.0.5",
   "description": "一个简易的Vue UI组件库",
   "main": "index.js",
   "scripts": {

@@ -19,17 +19,17 @@
 2. 安装
 
     ~~~
-    npm i --save pandaUI
+    npm i --save panda-ui-amber
     ~~~
    
     ~~~
-    yarn add pandaUI
+    yarn add panda-ui-amber
     ~~~
 
 3. 引入
     ~~~
-    import {Button, ButtonGroup, Icon} from 'pandaUI'
-    import 'pandaUI/dist/index.css'
+    import {Button, ButtonGroup, Icon} from 'panda-ui-amber'
+    import 'panda-ui-amber/dist/index.css'
    
     export default {
         name: 'app',
