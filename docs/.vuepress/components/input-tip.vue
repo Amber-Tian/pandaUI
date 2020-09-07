@@ -1,6 +1,7 @@
 <template>
   <div>
-    <p-input disabled value="不可编辑"></p-input>
+    <p-input success></p-input>
+    <p-input error="输入内容不合规范"></p-input>
   </div>
 </template>
 

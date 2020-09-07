@@ -1,5 +1,5 @@
 module.exports = {
-  // base: '/pandaUI-web/',
+  base: '/pandaUI-web/',
   title: '熊猫 UI',
   description: '一个简单好用的 UI 框架',
   themeConfig: {

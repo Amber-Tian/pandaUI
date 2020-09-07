@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper" :class="{error}">
-    <input type="text" :value="value" :disabled="disabled" :success="success"
+    <input :type="type" :value="value" :disabled="disabled" :success="success"
            :placeholder="placeholder"
            @change="$emit('change', $event.target.value)"
            @input="$emit('input', $event.target.value)"
@@ -22,6 +22,10 @@
     name: 'PandaInput',
     components: {Icon},
     props: {
+      type: {
+        type: String,
+        default: 'text'
+      },
       value: {
         type: String
       },
