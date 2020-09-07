@@ -7,7 +7,13 @@
 <script>
   import './svg'
   export default {
-    props: ['name']
+    name: 'PandaIcon',
+    props: {
+      name: {
+        type: String,
+        required: true
+      }
+    }
   }
 </script>
 

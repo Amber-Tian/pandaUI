@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper" :class="{error}">
     <input type="text" :value="value" :disabled="disabled" :success="success"
+           :placeholder="placeholder"
            @change="$emit('change', $event.target.value)"
            @input="$emit('input', $event.target.value)"
            @focus="$emit('focus', $event.target.value)"
@@ -18,6 +19,7 @@
   import Icon from './icon'
 
   export default {
+    name: 'PandaInput',
     components: {Icon},
     props: {
       value: {
@@ -26,6 +28,9 @@
       disabled: {
         type: Boolean,
         default: false
+      },
+      placeholder: {
+        type: String
       },
       success: {
         type: Boolean,
@@ -46,7 +51,7 @@
       border: 1px solid $border-color; border-radius: $border-radius;
       &:hover {border-color: $border-color-hover;}
       &:focus {box-shadow: inset 0 1px 3px $box-shadow-color; outline: none;}
-      &[disabled] {border-color: #bbb; color: #bbb; cursor: not-allowed}
+      &[disabled] {border-color: #bbb; color: #bbb; cursor: not-allowed;}
     }
     &.error {
       > input {border-color: $red;}

@@ -3,10 +3,10 @@ module.exports = {
   title: '熊猫 UI',
   description: '一个简单好用的 UI 框架',
   themeConfig: {
-    logo: '/assets/img/logo.png',
+    logo: '/img/panda.svg',
     nav: [
       { text: '首页', link: '/' },
-      { text: '组件', link: '/components/' },
+      { text: '组件', link: '/components/button' },
       { text: 'Github', link: 'https://github.com/Amber-Tian/pandaUI' },
     ],
     sidebar: [
@@ -24,9 +24,16 @@ module.exports = {
       },
       {
         title: '组件',
-        path: '/components/',
         children: [
           '/components/button',
+          '/components/button-group',
+          '/components/input',
+          '/components/layout',
+          '/components/grid',
+          '/components/tabs',
+          '/components/collapse',
+          '/components/popover',
+          '/components/toast'
         ],
         collapsable: false
       }

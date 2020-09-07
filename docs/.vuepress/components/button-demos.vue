@@ -1,22 +1,29 @@
 <template>
   <div>
-    hello world
-    <p-popover>
-      <div slot="content" slot-scope="{close}">
-        内容
-        <p-button @click="close">关闭</p-button>
-      </div>
-      <button>点击</button>
-    </p-popover>
-<!--    <p-button>默认按钮</p-button>-->
+    <p-button icon="setting">按钮</p-button>
+    <p-button icon="setting" class="icon-right">按钮</p-button>
+    <p-button loading>按钮</p-button>
+    <p-button disabled>按钮</p-button>
+
+    <pre><code>{{content}}</code></pre>
   </div>
 </template>
 
 <script>
-  import Popover from '../../../src/popover'
+  import Button from '../../../src/button'
   export default {
     components: {
-      'p-popover': Popover
+      'p-button': Button
+    },
+    data() {
+      return {
+        content: `
+          <p-button icon="setting">按钮</p-button>
+          <p-button icon="setting" class="icon-right">按钮</p-button>
+          <p-button loading>按钮</p-button>
+          <p-button disabled>按钮</p-button>
+        `.replace(/\t+| +/g, '').trim()
+      }
     }
   }
 </script>

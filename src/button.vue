@@ -1,6 +1,7 @@
 <template>
   <button class="p-button"
-          :class="{[`icon-${iconPosition}`]: true}"
+          :class="{[`icon-${iconPosition}`]: true, 'disabled': disabled}"
+          :disabled="disabled"
           @click="$emit('click')">
     <p-icon class="icon" v-if="icon && !loading" :name="icon"></p-icon>
     <p-icon class="loading icon" v-if="loading" name="loading"></p-icon>
@@ -14,6 +15,7 @@
   import Icon from './icon'
 
   export default {
+    name: 'PandaButton',
     components: {
       'p-icon': Icon
     },
@@ -29,6 +31,10 @@
         validator(value) {
           return value === 'left' || value === 'right'
         }
+      },
+      disabled: {
+        type: Boolean,
+        default: false
       }
     }
   }
@@ -49,6 +55,12 @@
     &.icon-right {
       > .p-button-content {order: 1; }
       > .icon {order: 2; margin-right: 0; margin-left: .5em; }
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+
+      &:hover {border-color: $border-color;}
     }
 
     > .loading {
