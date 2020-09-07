@@ -1,8 +1,6 @@
 <template>
   <div class="col" :class="colClass" :style="colStyle">
-    <div style="border: 1px solid red">
       <slot></slot>
-    </div>
   </div>
 </template>
 

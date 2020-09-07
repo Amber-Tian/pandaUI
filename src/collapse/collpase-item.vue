@@ -49,6 +49,7 @@
   $grey: #ddd;
   $border-radius: 4px;
   .collapseItem {
+    cursor: pointer;
     > .title {
       border: 1px solid $grey; margin: -1px -1px 0 -1px;
       min-height: 32px; display: flex; align-items: center;
