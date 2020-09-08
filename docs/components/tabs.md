@@ -22,18 +22,22 @@ title: Tabs - 标签页
 
   <ClientOnly><tabs-default/></ClientOnly>
 
-    <p-tabs selected="tab1">
-      <p-tabs-head>
-        <p-tabs-item name="tab1">tab1</p-tabs-item>
-        <p-tabs-item name="tab2">tab2</p-tabs-item>
-        <p-tabs-item name="tab3">tab3</p-tabs-item>
-      </p-tabs-head>
-      <p-tabs-body>
-        <p-tabs-pane name="tab1">content1</p-tabs-pane>
-        <p-tabs-pane name="tab2">content2</p-tabs-pane>
-        <p-tabs-pane name="tab3">content3</p-tabs-pane>
-      </p-tabs-body>
-    </p-tabs>
+  ::: details 点击查看代码
+  ```js
+  <p-tabs selected="tab1">
+    <p-tabs-head>
+      <p-tabs-item name="tab1">tab1</p-tabs-item>
+      <p-tabs-item name="tab2">tab2</p-tabs-item>
+      <p-tabs-item name="tab3">tab3</p-tabs-item>
+    </p-tabs-head>
+    <p-tabs-body>
+      <p-tabs-pane name="tab1">content1</p-tabs-pane>
+      <p-tabs-pane name="tab2">content2</p-tabs-pane>
+      <p-tabs-pane name="tab3">content3</p-tabs-pane>
+    </p-tabs-body>
+  </p-tabs>
+  ```
+  :::
 
 ### 页签禁用
 
@@ -41,18 +45,22 @@ title: Tabs - 标签页
 
   <ClientOnly><tabs-disabled/></ClientOnly>
 
-    <p-tabs selected="tab1">
-      <p-tabs-head>
-        <p-tabs-item name="tab1">tab1</p-tabs-item>
-        <p-tabs-item name="tab2" disabled>tab2</p-tabs-item>
-        <p-tabs-item name="tab3">tab3</p-tabs-item>
-      </p-tabs-head>
-      <p-tabs-body>
-        <p-tabs-pane name="tab1">content1</p-tabs-pane>
-        <p-tabs-pane name="tab2">content2</p-tabs-pane>
-        <p-tabs-pane name="tab3">content3</p-tabs-pane>
-      </p-tabs-body>
-    </p-tabs>
+  ::: details 点击查看代码
+  ```js
+  <p-tabs selected="tab1">
+    <p-tabs-head>
+      <p-tabs-item name="tab1">tab1</p-tabs-item>
+      <p-tabs-item name="tab2" disabled>tab2</p-tabs-item>
+      <p-tabs-item name="tab3">tab3</p-tabs-item>
+    </p-tabs-head>
+    <p-tabs-body>
+      <p-tabs-pane name="tab1">content1</p-tabs-pane>
+      <p-tabs-pane name="tab2">content2</p-tabs-pane>
+      <p-tabs-pane name="tab3">content3</p-tabs-pane>
+    </p-tabs-body>
+  </p-tabs>
+  ```
+  :::
 
 ### 附加内容
 
@@ -60,19 +68,24 @@ title: Tabs - 标签页
 
   <ClientOnly><tabs-actions/></ClientOnly>
 
-    <p-tabs selected="tab1">
-      <p-tabs-head>
-        <p-tabs-item name="tab1">tab1</p-tabs-item>
-        <p-tabs-item name="tab2">tab2</p-tabs-item>
-        <p-tabs-item name="tab3">tab3</p-tabs-item>
-        <template slot="actions">
-          <p-button icon="setting">设置</p-button>
-        </template>
-      </p-tabs-head>
-      <p-tabs-body>
-        <p-tabs-pane name="tab1">content1</p-tabs-pane>
-        <p-tabs-pane name="tab2">content2</p-tabs-pane>
-        <p-tabs-pane name="tab3">content3</p-tabs-pane>
-      </p-tabs-body>
-    </p-tabs>
+  ::: details 点击查看代码
+  ```js
+  <p-tabs selected="tab1">
+    <p-tabs-head>
+      <p-tabs-item name="tab1">tab1</p-tabs-item>
+      <p-tabs-item name="tab2">tab2</p-tabs-item>
+      <p-tabs-item name="tab3">tab3</p-tabs-item>
+      <template slot="actions">
+        <p-button icon="setting">设置</p-button>
+      </template>
+    </p-tabs-head>
+    <p-tabs-body>
+      <p-tabs-pane name="tab1">content1</p-tabs-pane>
+      <p-tabs-pane name="tab2">content2</p-tabs-pane>
+      <p-tabs-pane name="tab3">content3</p-tabs-pane>
+    </p-tabs-body>
+  </p-tabs>
+  ```
+  :::
+
 

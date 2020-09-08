@@ -20,67 +20,81 @@ title: Layout - 布局
 
 ### 常见页面布局
 
-  <ClientOnly>
-  <layout-default></layout-default>
-  </ClientOnly>
+  <ClientOnly><layout-default/></ClientOnly>
 
+  ::: details 点击查看代码
+  ```js
+  <p-layout>
+    <p-header class="header">header</p-header>
+    <p-content class="content">content</p-content>
+    <p-footer class="footer">footer</p-footer>
+  </p-layout>
+  ```
+  :::
+
+
+  <ClientOnly><layout-default2/></ClientOnly>
+
+  ::: details 点击查看代码
+  ```js
+  <p-layout>
+    <p-header class="header">header</p-header>
+    <p-layout>
+      <p-sider class="sider">sider</p-sider>
+      <p-content class="content">content</p-content>
+    </p-layout>
+    <p-footer class="footer">footer</p-footer>
+  </p-layout>
+  ```
+  :::
+
+
+  <ClientOnly><layout-default3/></ClientOnly>
+
+  ::: details 点击查看代码
+  ```js
+  <p-layout>
+    <p-header class="header">header</p-header>
+    <p-layout>
+      <p-sider class="sider">sider</p-sider>
+      <p-content class="content">content</p-content>
+      <p-sider class="sider">sider</p-sider>
+    </p-layout>
+    <p-footer class="footer">footer</p-footer>
+  </p-layout>
+  ```
+  :::
+
+
+  <ClientOnly><layout-default4/></ClientOnly>
+
+  ::: details 点击查看代码
+  ```js
+  <p-layout>
+    <p-header class="header">header</p-header>
+    <p-layout>
+      <p-sider class="sider">sider</p-sider>
+      <p-layout>
+        <p-content class="content">content</p-content>
+        <p-footer class="footer">footer</p-footer>
+      </p-layout>
+    </p-layout>
+  </p-layout>
+  ```
+  :::
+
+
+  <ClientOnly><layout-default5/></ClientOnly>
+
+  ::: details 点击查看代码
+  ```js
+  <p-layout>
+    <p-sider class="sider">sider</p-sider>
     <p-layout>
       <p-header class="header">header</p-header>
       <p-content class="content">content</p-content>
       <p-footer class="footer">footer</p-footer>
     </p-layout>
-
-  <ClientOnly>
-  <layout-default2></layout-default2>
-  </ClientOnly>
-
-    <p-layout>
-      <p-header class="header">header</p-header>
-      <p-layout>
-        <p-sider class="sider">sider</p-sider>
-        <p-content class="content">content</p-content>
-      </p-layout>
-      <p-footer class="footer">footer</p-footer>
-    </p-layout>
-
-  <ClientOnly>
-  <layout-default3></layout-default3>
-  </ClientOnly>
-
-    <p-layout>
-      <p-header class="header">header</p-header>
-      <p-layout>
-        <p-sider class="sider">sider</p-sider>
-        <p-content class="content">content</p-content>
-        <p-sider class="sider">sider</p-sider>
-      </p-layout>
-      <p-footer class="footer">footer</p-footer>
-    </p-layout>
-
-  <ClientOnly>
-  <layout-default4></layout-default4>
-  </ClientOnly>
-
-    <p-layout>
-      <p-header class="header">header</p-header>
-      <p-layout>
-        <p-sider class="sider">sider</p-sider>
-        <p-layout>
-          <p-content class="content">content</p-content>
-          <p-footer class="footer">footer</p-footer>
-        </p-layout>
-      </p-layout>
-    </p-layout>
-
-  <ClientOnly>
-  <layout-default5></layout-default5>
-  </ClientOnly>
-
-    <p-layout>
-      <p-sider class="sider">sider</p-sider>
-      <p-layout>
-        <p-header class="header">header</p-header>
-        <p-content class="content">content</p-content>
-        <p-footer class="footer">footer</p-footer>
-      </p-layout>
-    </p-layout>
+  </p-layout>
+  ```
+  :::

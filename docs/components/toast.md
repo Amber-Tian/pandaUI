@@ -22,33 +22,37 @@ title: Toast - 消息提示
 
   <ClientOnly><toast-default/></ClientOnly>
 
-    <template>
-      <div>
-        <p-button @click="open1">顶部提示</p-button>
-        <p-button @click="open2">中间提示</p-button>
-        <p-button @click="open3">底部提示</p-button>
-      </div>
-    </template>
+  ::: details 点击查看代码
+  ```js
+  <template>
+    <div>
+      <p-button @click="open1">顶部提示</p-button>
+      <p-button @click="open2">中间提示</p-button>
+      <p-button @click="open3">底部提示</p-button>
+    </div>
+  </template>
 
-    <script>
-      export default {
-        methods: {
-          open1() {
-            this.$toast('顶部的消息提示')
-          },
-          open2() {
-            this.$toast('中间的消息提示', {
-              position: 'middle'
-            })
-          },
-          open3() {
-            this.$toast('底部的消息提示', {
-              position: 'bottom'
-            })
-          }
+  <script>
+    export default {
+      methods: {
+        open1() {
+          this.$toast('顶部的消息提示')
+        },
+        open2() {
+          this.$toast('中间的消息提示', {
+            position: 'middle'
+          })
+        },
+        open3() {
+          this.$toast('底部的消息提示', {
+            position: 'bottom'
+          })
         }
       }
-    </script>
+    }
+  </script>
+  ```
+  :::
 
 ### 可手动关闭
 
@@ -56,37 +60,41 @@ title: Toast - 消息提示
 
   <ClientOnly><toast-close/></ClientOnly>
 
-    <template>
-      <div>
-        <p-button @click="open1">顶部提示</p-button>
-        <p-button @click="open2">中间提示</p-button>
-        <p-button @click="open3">底部提示</p-button>
-      </div>
-    </template>
+  ::: details 点击查看代码
+  ```js
+  <template>
+    <div>
+      <p-button @click="open1">顶部提示</p-button>
+      <p-button @click="open2">中间提示</p-button>
+      <p-button @click="open3">底部提示</p-button>
+    </div>
+  </template>
 
-    <script>
-      export default {
-        methods: {
-          open1() {
-            this.$toast('顶部的消息提示', {
-              closeText: '关闭',
-              autoClose: 5
-            })
-          },
-          open2() {
-            this.$toast('中间的消息提示', {
-              position: 'middle',
-              closeText: '知道了',
-              autoClose: 5
-            })
-          },
-          open3() {
-            this.$toast('底部的消息提示', {
-              position: 'bottom',
-              closeText: '好的',
-              autoClose: 5
-            })
-          }
+  <script>
+    export default {
+      methods: {
+        open1() {
+          this.$toast('顶部的消息提示', {
+            closeText: '关闭',
+            autoClose: 5
+          })
+        },
+        open2() {
+          this.$toast('中间的消息提示', {
+            position: 'middle',
+            closeText: '知道了',
+            autoClose: 5
+          })
+        },
+        open3() {
+          this.$toast('底部的消息提示', {
+            position: 'bottom',
+            closeText: '好的',
+            autoClose: 5
+          })
         }
       }
-    </script>
+    }
+  </script>
+  ```
+  :::
