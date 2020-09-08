@@ -11,7 +11,7 @@ import Content from './layout/content'
 import Col from './grid/col'
 import Row from './grid/row'
 import Toast from './toast'
-import plugin from './plugin'
+import plugin from './pluginToast'
 import Tabs from './tabs/tabs'
 import TabsHead from './tabs/tabs-head'
 import TabsBody from './tabs/tabs-body'
@@ -54,7 +54,7 @@ new Vue({
   created() {
     this.$toast('更新成功', {
       autoClose: false,
-      closeButton: {text: '知道了'},
+      closeText: '知道了',
       position: 'top'
     })
   }

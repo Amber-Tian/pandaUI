@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p-collapse :selected.sync="selectedArray">
+    <p-collapse class="wrapper" :selected.sync="selectedArray">
       <p-collapse-item name="1" title="title1">content1</p-collapse-item>
       <p-collapse-item name="2" title="title2">content2</p-collapse-item>
       <p-collapse-item name="3" title="title3">content3</p-collapse-item>
@@ -24,3 +24,9 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  .wrapper:hover  {
+    box-shadow: 0 0 3px #bbb;
+  }
+</style>

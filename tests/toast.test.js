@@ -31,7 +31,7 @@ describe('Toast', () => {
     const Constructor = Vue.extend(Toast)
     const vm = new Constructor({
       propsData: {
-        closeButton: {
+        closeText: {
           text: '知道了',
           callback,
         }

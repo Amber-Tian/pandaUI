@@ -47,14 +47,14 @@
 
 <style lang="scss" scoped>
   $grey: #ddd;
-  $border-radius: 4px;
+  $border-radius: 8px;
   .collapseItem {
-    cursor: pointer;
     > .title {
+      cursor: pointer;
       border: 1px solid $grey; margin: -1px -1px 0 -1px;
-      min-height: 32px; display: flex; align-items: center;
+      min-height: 40px; display: flex; align-items: center;
       padding: 0 8px;
-      background: lighten($grey, 8%);
+      background: #e5e9f2;
     }
     &:first-child {
       > .title {border-top-left-radius: $border-radius; border-top-right-radius: $border-radius;}

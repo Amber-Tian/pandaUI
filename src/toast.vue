@@ -4,9 +4,9 @@
       <div class="message">
         <slot></slot>
       </div>
-      <div class="line" ref="line"></div>
-      <div class="close" v-if="closeButton" @click="onClickClose">
-        {{closeButton.text}}
+      <div class="line" ref="line" v-if="closeText"></div>
+      <div class="close" v-if="closeText" @click="close">
+        {{closeText}}
       </div>
     </div>
   </div>
@@ -18,18 +18,13 @@
     props: {
       autoClose: {
         type: [Boolean, Number],
-        default: 5,
+        default: 3,
         validator(value) {
           return value === false || typeof value === 'number'
         }
       },
-      closeButton: {
-        type: Object,
-        default() {
-          return {
-            text: '关闭', callback: undefined
-          }
-        }
+      closeText: {
+        type: String
       },
       position: {
         type: String,
@@ -52,10 +47,12 @@
     },
     methods: {
       updateStyles() {
-        this.$nextTick(() => {
-          this.$refs.line.style.height =
-            `${this.$refs.toast.getBoundingClientRect().height}px`
-        })
+        if (this.$refs.line) {
+          this.$nextTick(() => {
+            this.$refs.line.style.height =
+              `${this.$refs.toast.getBoundingClientRect().height}px`
+          })
+        }
       },
       execAutoClose() {
         if (this.autoClose) {
@@ -68,12 +65,6 @@
         this.$el.remove()
         this.$emit('close')
         this.$destroy()
-      },
-      onClickClose() {
-        this.close()
-        if (this.closeButton && typeof this.closeButton.callback === 'function') {
-          this.closeButton.callback(this)
-        }
       }
     }
   }
@@ -96,6 +87,7 @@
     to {opacity: 1;}
   }
   .panda-toast {
+    z-index: 22;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
