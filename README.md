@@ -2,7 +2,7 @@
 
 [![Build Status](https://www.travis-ci.org/Amber-Tian/pandaUI.svg?branch=master)](https://www.travis-ci.org/Amber-Tian/pandaUI)
 
-## 介绍
+## 介绍  [进入官网](http://amber-tian.github.io/pandaUI-web/)
 
 ## 开始使用
 
