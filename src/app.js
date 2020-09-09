@@ -44,18 +44,5 @@ Vue.component('p-collapse', Collapse)
 Vue.component('p-collapse-item', CollapseItem)
 
 new Vue({
-  el: '#app',
-  data: {
-    loading1: false,
-    loading2: false,
-    loading3: false,
-    collapseSelected: ['1', '2']
-  },
-  created() {
-    this.$toast('更新成功', {
-      autoClose: false,
-      closeText: '知道了',
-      position: 'top'
-    })
-  }
+  el: '#app'
 })

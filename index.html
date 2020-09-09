@@ -12,18 +12,6 @@
 <body>
 <div id="app">
   <div class="demo">
-    <p-collapse :selected.sync="collapseSelected" single>
-      <p-collapse-item name="1" title="title1">content1</p-collapse-item>
-      <p-collapse-item name="2" title="title2">content2</p-collapse-item>
-      <p-collapse-item name="3" title="title3">content3</p-collapse-item>
-    </p-collapse>
-    <p-collapse :selected.sync="collapseSelected">
-      <p-collapse-item name="1" title="title1">content1</p-collapse-item>
-      <p-collapse-item name="2" title="title2">content2</p-collapse-item>
-      <p-collapse-item name="3" title="title3">content3</p-collapse-item>
-    </p-collapse>
-  </div>
-  <div class="demo">
     <div style="margin-left: 200px">
       <p-popover position="left">
         <div slot="content" slot-scope="{close}">
@@ -84,94 +72,6 @@
         <p-button>悬浮</p-button>
       </p-popover>
     </div>
-  </div>
-  <div class="demo">
-    <p-tabs selected="tab1">
-      <p-tabs-head>
-        <p-tabs-item name="tab1">
-          tab1
-        </p-tabs-item>
-        <p-tabs-item name="tab2" disabled>
-          tab2
-        </p-tabs-item>
-        <p-tabs-item name="tab3">
-          tab3
-        </p-tabs-item>
-        <template slot="actions">
-          <p-button icon="setting">设置</p-button>
-        </template>
-      </p-tabs-head>
-      <p-tabs-body>
-        <p-tabs-pane name="tab1">
-          content1
-        </p-tabs-pane>
-        <p-tabs-pane name="tab2">
-          content2
-        </p-tabs-pane>
-        <p-tabs-pane name="tab3">
-          content3
-        </p-tabs-pane>
-      </p-tabs-body>
-    </p-tabs>
-  </div>
-  <div class="demo" style="overflow: hidden;">
-    <p-row gutter="20">
-      <p-col class="col"
-             span="24"
-             pad="8"
-             small-pc="4"
-             pc="2"
-             big-pc="1"
-      >hi</p-col>
-      <p-col class="col"
-             span="24"
-             pad="16"
-             small-pc="20"
-             pc="22"
-             big-pc="23"
-      >hello</p-col>
-    </p-row>
-    <p-row>
-      <p-col class="col" span="10">hi</p-col>
-      <p-col class="col" span="14">hello</p-col>
-    </p-row>
-    <p-row gutter="100">
-      <p-col class="col" span="6">hi</p-col>
-      <p-col class="col" span="4">hello</p-col>
-      <p-col class="col" span="6">hello</p-col>
-      <p-col class="col" span="4">hello</p-col>
-    </p-row>
-  </div>
-  <div class="demo">
-    <p-layout>
-      <p-header>header</p-header>
-      <p-content>content</p-content>
-      <p-footer>footer</p-footer>
-    </p-layout>
-    <p-layout>
-      <p-header>header</p-header>
-      <p-layout>
-        <p-sider>sider</p-sider>
-        <p-content>content</p-content>
-      </p-layout>
-      <p-footer>footer</p-footer>
-    </p-layout>
-  </div>
-  <div class="demo">
-    <p-input disabled value="张三"></p-input>
-    <p-input tip="用户名"></p-input>
-    <p-input success value="王五"></p-input>
-    <p-input error="用户名不能为空"></p-input>
-  </div>
-  <div class="demo">
-    <p-button icon="setting" :loading="loading1" @click="loading1=!loading1">按钮</p-button>
-    <p-button icon="setting" class="icon-right" :loading="loading2" @click="loading2=!loading2">按钮</p-button>
-    <p-button :loading="loading3" @click="loading3=!loading3">按钮</p-button>
-    <p-button-group>
-      <p-button icon="left">上一页</p-button>
-      <p-button>更多</p-button>
-      <p-button icon="right" class="icon-right">下一页</p-button>
-    </p-button-group>
   </div>
 </div>
 <script src="./src/app.js"></script>

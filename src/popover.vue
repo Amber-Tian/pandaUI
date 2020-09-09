@@ -39,47 +39,28 @@
     mounted() {
       this.addPopoverListeners()
     },
-    beforeDestroy() {
-      this.putBackContent()
-      this.removePopoverListeners()
-    },
-    computed: {
-      openEvent() {
-        if (this.trigger === 'click') {
-          return 'click'
-        } else {
-          return 'mouseenter'
-        }
-      },
-      closeEvent() {
-        if (this.trigger === 'click') {
-          return 'click'
-        } else {
-          return 'mouseleave'
-        }
-      }
-    },
     methods: {
       addPopoverListeners() {
         if (this.trigger === 'click') {
           this.$refs.popover.addEventListener('click', this.onClick)
         } else {
-          this.$refs.popover.addEventListener('mouseenter', this.open)
-          this.$refs.popover.addEventListener('mouseleave', this.close)
+          let timer
+          this.$refs.popover.addEventListener('mouseenter', () => {
+            clearTimeout(timer)
+            this.open()
+          })
+          this.$refs.popover.addEventListener('mouseleave', () => {
+            timer = setTimeout(this.close, 300)
+            if (this.$refs.contentWrapper) {
+              this.$refs.contentWrapper.addEventListener('mouseenter', () => {
+                clearTimeout(timer)
+              })
+              this.$refs.contentWrapper.addEventListener('mouseleave', () => {
+                timer = setTimeout(this.close, 300)
+              })
+            }
+          })
         }
-      },
-      removePopoverListeners() {
-        if (this.trigger === 'click') {
-          this.$refs.popover.removeEventListener('click', this.onClick)
-        } else {
-          this.$refs.popover.removeEventListener('mouseenter', this.open)
-          this.$refs.popover.removeEventListener('mouseleave', this.close)
-        }
-      },
-      putBackContent() {
-        const {contentWrapper, popover} = this.$refs
-        if (!contentWrapper) {return}
-        popover.appendChild(contentWrapper)
       },
       positionContent() {
         const {contentWrapper, triggerWrapper} = this.$refs

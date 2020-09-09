@@ -46,7 +46,7 @@
 <style lang="scss" scoped>
   .wrapper {
     border: 1px solid #ddd;
-    padding: 26px;
-    > :nth-child(n) {margin-right: 10px;}
+    padding: 16px;
+    > :nth-child(n) {margin-right: 8px;}
   }
 </style>
