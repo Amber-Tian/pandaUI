@@ -10,7 +10,7 @@ import Content from './src/layout/content'
 import Col from './src/grid/col'
 import Row from './src/grid/row'
 import Toast from './src/toast'
-import plugin from './src/pluginToast'
+import pluginToast from './src/pluginToast'
 import Tabs from './src/tabs/tabs'
 import TabsHead from './src/tabs/tabs-head'
 import TabsBody from './src/tabs/tabs-body'
@@ -20,4 +20,4 @@ import Popover from './src/popover'
 import Collapse from './src/collapse/collapse'
 import CollapseItem from './src/collapse/collpase-item'
 
-export {Button, ButtonGroup, Icon, Input, Layout, Header, Footer, Sider, Content, Col, Row, Toast, plugin, Tabs, TabsItem, TabsPane, TabsBody, TabsHead, Popover, Collapse, CollapseItem}
+export {Button, ButtonGroup, Icon, Input, Layout, Header, Footer, Sider, Content, Col, Row, Toast, pluginToast, Tabs, TabsItem, TabsPane, TabsBody, TabsHead, Popover, Collapse, CollapseItem}

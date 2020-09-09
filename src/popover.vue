@@ -25,7 +25,7 @@
       },
       trigger: {
         type: String,
-        default: 'click',
+        default: 'hover',
         validator(value) {
           return ['click', 'hover'].indexOf(value) >= 0
         }
@@ -50,13 +50,13 @@
             this.open()
           })
           this.$refs.popover.addEventListener('mouseleave', () => {
-            timer = setTimeout(this.close, 300)
+            timer = setTimeout(this.close, 200)
             if (this.$refs.contentWrapper) {
               this.$refs.contentWrapper.addEventListener('mouseenter', () => {
                 clearTimeout(timer)
               })
               this.$refs.contentWrapper.addEventListener('mouseleave', () => {
-                timer = setTimeout(this.close, 300)
+                timer = setTimeout(this.close, 200)
               })
             }
           })

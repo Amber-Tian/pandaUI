@@ -4,75 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <title>panda UI</title>
-  <style>.demo{margin: 100px 0}</style>
-  <style>
-    *{box-sizing: border-box;}
-  </style>
 </head>
 <body>
 <div id="app">
-  <div class="demo">
-    <div style="margin-left: 200px">
-      <p-popover position="left">
-        <div slot="content" slot-scope="{close}">
-          内容
-          <p-button @click="close">关闭</p-button>
-        </div>
-        <p-button>点击</p-button>
-      </p-popover>
-      <p-popover>
-        <div slot="content" slot-scope="{close}">
-          内容
-          <p-button @click="close">关闭</p-button>
-        </div>
-        <p-button>点击</p-button>
-      </p-popover>
-      <p-popover position="bottom">
-        <div slot="content" slot-scope="{close}">
-          内容
-          <p-button @click="close">关闭</p-button>
-        </div>
-        <p-button>点击</p-button>
-      </p-popover>
-      <p-popover position="right">
-        <div slot="content" slot-scope="{close}">
-          内容
-          <p-button @click="close">关闭</p-button>
-        </div>
-        <p-button>点击</p-button>
-      </p-popover>
-    </div>
-    <div style="margin:100px 200px">
-      <p-popover position="left" trigger="hover">
-        <div slot="content" slot-scope="{close}">
-          内容
-          <p-button @click="close">关闭</p-button>
-        </div>
-        <p-button>悬浮</p-button>
-      </p-popover>
-      <p-popover trigger="hover">
-        <div slot="content" slot-scope="{close}">
-          内容
-          <p-button @click="close">关闭</p-button>
-        </div>
-        <p-button>悬浮</p-button>
-      </p-popover>
-      <p-popover position="bottom" trigger="hover">
-        <div slot="content" slot-scope="{close}">
-          内容
-          <p-button @click="close">关闭</p-button>
-        </div>
-        <p-button>悬浮</p-button>
-      </p-popover>
-      <p-popover position="right" trigger="hover">
-        <div slot="content" slot-scope="{close}">
-          内容
-          <p-button @click="close">关闭</p-button>
-        </div>
-        <p-button>悬浮</p-button>
-      </p-popover>
-    </div>
-  </div>
 </div>
 <script src="./src/app.js"></script>
 </body>
