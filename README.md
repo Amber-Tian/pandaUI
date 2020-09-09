@@ -28,18 +28,24 @@
 
 3. 引入
     ~~~
-    import {Button, ButtonGroup, Icon} from 'panda-ui-amber'
+    import {Button, ButtonGroup} from 'panda-ui-amber'
     import 'panda-ui-amber/dist/index.css'
    
     export default {
         name: 'app',
-    components: {
-        'p-button': Button,
-        'p-icon': Icon,
-        'p-button-group': ButtonGroup
+        components: {
+          'p-button': Button,
+          'p-button-group': ButtonGroup
+        }
     }
-    ~~~    
+    ~~~
 
+    Toast引入方式：
+    ~~~
+    import Vue from 'vue'
+    import {pluginToast} from 'panda-ui-amber'
+    Vue.use(pluginToast)
+    ~~~
 ## 文档
 
 ## 提问
