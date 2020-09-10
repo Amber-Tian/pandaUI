@@ -16,7 +16,7 @@ describe('Popover', () => {
     const div = document.createElement('div')
     document.body.appendChild(div)
     div.innerHTML = `
-      <p-popover position="bottom" ref="a">
+      <p-popover trigger="click" position="bottom" ref="a">
         <template slot="content">
           弹出内容
         </template>
